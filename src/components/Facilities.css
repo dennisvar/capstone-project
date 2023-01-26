@@ -1,0 +1,8 @@
+#facilities-container {
+    margin: 5px 20px;
+}
+
+#facilities-container table,#facilities-container th,#facilities-container td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

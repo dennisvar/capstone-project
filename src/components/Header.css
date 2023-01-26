@@ -1,0 +1,10 @@
+#header-container {
+    background: #9b59b6;
+    margin: 20px 20px 5px;
+    padding: 15px;
+
+}
+
+#header-container h1 {
+    color: white;
+}

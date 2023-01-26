@@ -1,0 +1,16 @@
+#footer-container {
+    margin: 5px 20px 20px;
+}
+
+#footer-container div {
+    background: #3498db;
+    display: block;
+}
+
+#footer-container div ul {
+    list-style: none;
+}
+
+#footer-container div ul li a {
+    color: white;
+}
