@@ -1,4 +1,26 @@
-#main-container {
+.main-container {
+    display: flex;
+    margin: 5px 20px
+}
+
+.column {
+    background-color: #ecf0f1;
+    margin: 10px;
+}
+
+.left {
+    flex: 66%;
+}
+
+.right {
+    flex: 33%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+/* #main-container {
     margin: 5px 20px;
 }
 
@@ -11,7 +33,7 @@
     background-color: #2ecc71;
     flex-direction: column;
     margin: 5px;
-    flex-grpw: 50;
+    flex-grow: 50;
 }
 
 #box2 {
@@ -19,13 +41,18 @@
     flex-direction: column;
     margin: 5px;
     flex-grow: 50;
-    width: fit-content;
-    height: fit-content;
+}
+
+#box2 img {
+    width: 100%;
+    min-width: 410px;
+    max-width: 800px;
 }
 
 #box3 {
     background-color: #9b59b6;
     margin: 5px;
+    flex-direction: column;
 }
 
 #box4 {
@@ -73,9 +100,5 @@
 .active {
     color: #ecf0f1;
     background-color: #34495e;
-}
+} */
 
-#parkImage {
-    height: 150px;
-    width: 300px;
-}

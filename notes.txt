@@ -1,0 +1,35 @@
+pomodoros 30 6 24
+
+1/25/2023
+1. 4:28pm
+2. 5:03pm
+3. 5:43pm
+4. 6:53pm
+5. 7:24pm
+6. 9:15pm
+7. 10:06pm
+8.
+9.
+
+1/26/2023
+1. 4:19pm
+2. 5:23pm
+3. 5:53pm
+4. 6:42pm
+5. 7:17pm
+6. 7:47pm
+7. 8:18pm
+
+1/27/2023
+1. 5:18pm
+2. 7:49pm
+3. 8:19pm
+4. 9:19pm
+
+- navbar 2:3
+    -blank page when using navlink
+        -routing fixed navlink not working still
+- main page 2:9
+- bookings page 2:1
+- events page 2:1
+- facilities page 2
