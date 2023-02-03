@@ -1,10 +1,9 @@
 import React from 'react';
-import './Events.css';
 
 const Events = () => {
     return (
         <>
-            <div id="events-container">
+            <div>
                 <h1>important dates</h1>
                 <table>
                     <thead>

@@ -1,114 +1,108 @@
 import React from 'react';
-import './Bookings.css';
+
+
 
 const Bookings = () => {
+
     return (
         <>
-            <div class="booking-container">
-                    <div class="form-container">
+            <div>
+                <div class="flex py-16 justify-center">
+                    <div class="mx-auto w-full max-w-[450px] shadow-md px-12 py-12 bg-white rounded-2xl">
+                        <div>
+                            <h1 class="text-[#35074d] text-3xl font-bold text-center mb-4">Book a Facility</h1>
+                        </div>
                         <form>
-                            <div>
-                                <label>Facility: </label>
-                                <select>
+                            <div class="mb-5">
+                                <label class="mb-3 block text-base font-medium text-[#35074d]" for="name ">Name: </label>
+                                <input class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#9f64f1] focus:shadow-md" id="name" type="text" placeholder="Name"/>
+                            </div>
+                            <div class="mb-5">
+                                <label class="mb-3 block text-base font-medium text-[#35074d]" for="facility">Facility: </label>
+                                <select class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#9f64f1] focus:shadow-md" id="facility">
+                                    <option selected hidden >-- Select Facility --</option>
                                     <option>Picnic Pavilion</option>
-                                    <option>Beach Firepit</option>
+                                    <option value="defaultOption">Beach Firepit</option>
                                     <option>Petting Zoo</option>
                                     <option>Splash Pad</option>
                                     <option>Hedge Maze</option>
                                 </select>
-                                <label>Date: </label>
-                                <input type="date"></input>
-                                <label>Time: </label>
-                                <input type="time"></input>
                             </div>
-                        </form>
-                    </div>
-                <div class="row">
-                    <div class="column left">
-                        <div class="calendar-container">
-                            <div>
-                                <ul>
-                                    <li>June 2021</li>
-                                </ul>
+                            <div class="mb-5">
+                                <label class="mb-3 block text-base font-medium text-[#35074d]" for="date">Date: </label>
+                                <input class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#9f64f1] focus:shadow-md" id="date" type="date"></input>
                             </div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>SUN</th>
-                                        <th>MON</th>
-                                        <th>TUE</th>
-                                        <th>WED</th>
-                                        <th>THUR</th>
-                                        <th>FRI</th>
-                                        <th>SAT</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>7</td>
-                                        <td>8</td>
-                                        <td>9</td>
-                                        <td>10</td>
-                                        <td>11</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td>14</td>
-                                        <td>15</td>
-                                        <td>16</td>
-                                        <td>17</td>
-                                        <td>18</td>
-                                        <td>19</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>21</td>
-                                        <td>22</td>
-                                        <td>23</td>
-                                        <td>24</td>
-                                        <td>25</td>
-                                        <td>26</td>
-                                    </tr>
-                                    <tr>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                        <td>30</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="column right">
-                        <div class="view-container">
-                            <div>
-                                <p><u><strong>Selected Day</strong></u></p>
-                                <p>All Facilities are booked for today<br/>
-                                Please Select another day for your booking<br/>
-                                Selected Faciliies Basketball Court<br/>
-                                Time: 2:00 pm - 4:00 pm<br/>
-                                Booking Rejected</p>
+                            <div class="mb-5">
+                                <label class="mb-3 block text-base font-medium text-[#35074d]" for="time" >Time: </label>
+                                <input class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#9f64f1] focus:shadow-md" id="time" type="time"></input>
                             </div>
-                        </div>
+                            <div class="flex max-w-[200px] mx-auto justify-between">
+                                <button class="mt-4 bg-purple-500 text-white py-2 px-6 rounded-md hover:bg-purple-600" type="reset" value="Reset">Clear</button>
+                                <button class="mt-4 bg-purple-500 text-white py-2 px-6 rounded-md hover:bg-purple-600" type="submit" value="Submit">Book</button>
+                            </div>
+                    </form>
                     </div>
                 </div>
-                <div class="button-container">
-                    <button>Cancel</button>
-                    <button>Book</button>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="container mx-auto px-4 py-2 md:py-24 ">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <div class="flex items-center justify-between py-2 px-6">
+                        <div>
+                            <span>February</span>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <div class="-mx-1 -mb-1">
+                        <div class="flex flex-wrap text-center font-bold border-t border-l">
+                            <div class="w-[14.28%] px-2 py-2 border-r">SUNDAY</div>
+                            <div class="w-[14.28%] px-2 py-2 border-r">MONDAY</div>
+                            <div class="w-[14.28%] px-2 py-2 border-r">TUESDAY</div>
+                            <div class="w-[14.28%] px-2 py-2 border-r">WEDNESDAY</div>
+                            <div class="w-[14.28%] px-2 py-2 border-r">THURSDAY</div>
+                            <div class="w-[14.28%] px-2 py-2 border-r">FRIDAY</div>
+                            <div class="w-[14.28%] px-2 py-2">SATURDAY</div>
+                        </div>
+                        <div class="flex flex-wrap border-t border-l">
+                            <div class="text-cente border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">1</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">2</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">3</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">4</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">5</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">6</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32 ">7</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">8</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">9</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">10</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">11</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">12</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">13</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">14</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">15</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">16</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">17</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">18</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">19</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">20</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">21</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">22</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">23</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">24</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">25</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">26</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">27</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32">28</div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                            <div class="text-center border-r border-b px-4 pt-2 w-[14.28%] h-32"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

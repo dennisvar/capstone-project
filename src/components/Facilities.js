@@ -1,10 +1,9 @@
 import React from 'react';
-import './Facilities.css';
 
 const Facilities = () => {
     return (
         <>
-            <div id="facilities-container">
+            <div>
                 <table>
                     <thead>
                         <th>Facilities</th>
