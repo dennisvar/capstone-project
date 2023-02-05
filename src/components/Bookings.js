@@ -1,8 +1,53 @@
 import React from 'react';
+import { ReactComponent as ArrowRight } from '../assets/arrow-right.svg';
+import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg';
+import { ReactComponent as Logo } from '../assets/logo.svg';
+
+
+
+
 
 
 
 const Bookings = () => {
+    const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    function initDate() {
+        let today = new Date();
+        this.month = today.getMonth();
+        this.year = today.getFullYear();
+        this.datepickerValue = new Date(this.year, this.month, today.getDate()).toDateString();
+    }
+
+    function isToday(date) {
+        const today = new Date();
+        const d = new Date(this.year, this.month, date);
+
+        return today.toDateString() === d.toDateString() ? true : false;
+    }
+
+    function getNoOfDays() {
+        let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+
+        // find where to start calendar day of week
+        let dayOfWeek = new Date(this.year, this.month).getDay();
+        let blankdaysArray = [];
+        
+        for (var i = 1; i <= dayOfWeek; i++) {
+            blankdaysArray.push(i);
+        }
+
+        let daysArray = [];
+        for (var i = 1; i <= daysInMonth; i++) {
+            daysArray.push(i);
+        }
+
+        this.blankdays = blankdaysArray;
+        this.no_of_days = daysArray;
+    }
+
+    
 
     return (
         <>
@@ -51,8 +96,16 @@ const Bookings = () => {
                 <div class="bg-white rounded-lg shadow overflow-hidden">
                     <div class="flex items-center justify-between py-2 px-6">
                         <div>
-                            <span>February</span>
-                            <span>2023</span>
+                            <span class="text-lg font-bold text-gray-800">February</span>
+                            <span class="ml-1 text-lg text-gray-600 font-normal">2023</span>
+                        </div>
+                        <div>
+                            <button type="button" class="leading-none rounded-lg transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 items-center">
+                                <ArrowLeft class="h-8 w-8"/>
+                            </button>
+                            <button type="button" class="leading-none rounded-lg transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 items-center">
+                                <ArrowRight class="h-8 w-8"/>
+                            </button>
                         </div>
                     </div>
                     <div class="-mx-1 -mb-1">
