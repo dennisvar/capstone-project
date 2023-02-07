@@ -10,7 +10,7 @@ import Maps from './components/Maps';
 import Chat from './components/Chat';
 import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 
-document.body.style.backgroundColor = "#ecf0f1";
+document.body.style.backgroundColor = "#f5f7f8";
 // document.body.style.margin = "0";
 // document.body.style.padding = "0";
 // document.body.style.height = "100%";
